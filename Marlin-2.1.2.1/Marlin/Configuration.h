@@ -658,7 +658,7 @@
 #define PID_K1 0.95      // Smoothing factor within any PID loop
 
 #if ENABLED(PIDTEMP)
-  //#define PID_DEBUG             // Print PID debug data to the serial port. Use 'M303 D' to toggle activation.
+  #define PID_DEBUG             // Print PID debug data to the serial port. Use 'M303 D' to toggle activation.
   //#define PID_PARAMS_PER_HOTEND // Use separate PID parameters for each extruder (useful for mismatched extruders)
                                   // Set/get with G-code: M301 E[extruder number, 0-2]
 
@@ -670,9 +670,9 @@
     #define DEFAULT_Ki_LIST {   1.54,   1.54 }
     #define DEFAULT_Kd_LIST {  76.55,  76.55 }
   #else
-    #define DEFAULT_Kp  21.73
-    #define DEFAULT_Ki   1.54
-    #define DEFAULT_Kd  76.55
+    #define DEFAULT_Kp  26.44
+    #define DEFAULT_Ki   1.83
+    #define DEFAULT_Kd  95.71
   #endif
 #endif
 
@@ -751,7 +751,7 @@
 
 #if ENABLED(PIDTEMPBED)
   //#define MIN_BED_POWER 0
-  //#define PID_BED_DEBUG // Print Bed PID debug data to the serial port.
+  #define PID_BED_DEBUG // Print Bed PID debug data to the serial port.
 
   #define DEFAULT_bedKp 141.11
   #define DEFAULT_bedKi 24.5
