@@ -737,7 +737,7 @@
  * the issues involved, don't use bed PID until someone else verifies that your hardware works.
  * @section bed temp
  */
-//#define PIDTEMPBED
+#define PIDTEMPBED
 
 //#define BED_LIMIT_SWITCHING
 
@@ -753,9 +753,9 @@
   //#define MIN_BED_POWER 0
   #define PID_BED_DEBUG // Print Bed PID debug data to the serial port.
 
-  #define DEFAULT_bedKp 141.11
-  #define DEFAULT_bedKi 24.5
-  #define DEFAULT_bedKd 541.88
+  #define DEFAULT_bedKp 138.35 //these are for 60c PLA bed
+  #define DEFAULT_bedKi 26.20
+  #define DEFAULT_bedKd 487.00
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
